@@ -94,8 +94,8 @@ laço: while (true){
 console.log(" ");
 for(i=0;i<codUser.length;i++){
     console.log(`Cod  ${codUser[i]} ${quantUser[i]} R$${preUser[i].toFixed(2)}`);
-    totalValor=(totalValor+preUser[i])
-    totalQuant=(totalQuant+quantUser[i])
+    totalValor=(totalValor+preUser[i]);
+    totalQuant=(totalQuant+quantUser[i]);
 }
 console.log(`         ${totalQuant} R$${totalValor.toFixed(2)}`);
 
