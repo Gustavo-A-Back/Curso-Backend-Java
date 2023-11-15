@@ -12,6 +12,10 @@
     UsuarioService usuarioService = new UsuarioService ();
     Usuario usuario = usuarioService.detalharUsuario(idUsuario);
    
+    if (usuario == null){
+        response.sendRedirect("listar-usuarios.jsp");
+        
+    }
 %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -51,24 +55,24 @@
                             <div class="text-center">
                                 <div class="h1 fw-light">Editar Usuário</div>
                             </div>
-                            <form action="inserir-usuario-controller.jsp" method="post">
+                            <form action="editar-usuario-controller.jsp" method="post">
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="nome" name="nome" type="text" placeholder="Nome" />
+                                    <input value="<% out.println(usuario.getNome());%>" class="form-control" id="nome" name="nome" type="text" placeholder="Nome" />
                                     <label for="nome">Nome</label>
                                 </div>
                                 
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="nivel" name="nivel" type="text" placeholder="Nivel" />
+                                    <input value="<% out.println(usuario.getNivel());%>"class="form-control" id="nivel" name="nivel" type="text" placeholder="Nivel" />
                                     <label for="nivel">Nivel</label>
                                 </div>
                                 
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="email" name="email" type="text" placeholder="Email" />
+                                    <input value="<% out.println(usuario.getEmail());%>" class="form-control" id="email" name="email" type="text" placeholder="Email" />
                                     <label for="email">Email</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="senha" name="senha" type="text" placeholder="Senha" />
+                                    <input value="<% out.println(usuario.getSenha());%>" class="form-control" id="senha" name="senha" type="text" placeholder="Senha" />
                                     <label for="senha">Senha</label>
                                 </div>
 
