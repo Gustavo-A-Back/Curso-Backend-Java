@@ -76,8 +76,13 @@
                         <td><% out.println(usuario.getNome()); %></td>
                         <td><% out.println(usuario.getEmail()); %></td>
                         <td><% out.println(usuario.getNivel()); %></td>
-                        <td>
+                        <td class="d-flex">
                             <a href="editar-usuario.jsp?id=<% out.println(usuario.getId()); %>">Editar</a>
+                            <form action="excluir-usuario-controller.jsp" method="post">
+                                <input hidden name="idUsuario" value="<%out.println(usuario.getId());%>"/>
+                                <button  class= "btn btn-primary btn-sm" type="submit">Excluir</button>
+                                
+                            </form>
                         </td>
                     </tr>
                     <% }

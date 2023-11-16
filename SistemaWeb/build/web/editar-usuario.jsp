@@ -56,6 +56,7 @@
                                 <div class="h1 fw-light">Editar Usuário</div>
                             </div>
                             <form action="editar-usuario-controller.jsp" method="post">
+                                <input hidden name="idUsuario" value="<%out.println(usuario.getId());%>"/>
                                 <div class="form-floating mb-3">
                                     <input value="<% out.println(usuario.getNome());%>" class="form-control" id="nome" name="nome" type="text" placeholder="Nome" />
                                     <label for="nome">Nome</label>

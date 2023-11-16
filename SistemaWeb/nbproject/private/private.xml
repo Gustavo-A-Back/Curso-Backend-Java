@@ -4,10 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/index.jsp</file>
-            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/assets/comum.css</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/src/java/Service/UsuarioService.java</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/editar-usuario-controller.jsp</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/listar-usuarios-controller.jsp</file>
             <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/logout.jsp</file>
             <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/src/java/config/SistemaWebDb.java</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/inserir-usuario.jsp</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/inserir-usuario-controller.jsp</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/src/java/model/Usuario.java</file>
             <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/listar-usuarios.jsp</file>
+            <file>file:/C:/Users/Aluno/Documents/NetBeansProjects/SistemaWeb/web/editar-usuario.jsp</file>
         </group>
     </open-files>
 </project-private>
